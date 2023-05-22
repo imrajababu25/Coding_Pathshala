@@ -1,0 +1,2162 @@
+<?php
+$new=0;
+session_start();
+if(!isset($_SESSION['username'])){$new=1;};
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="images/logo1.png" type="png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coding Pathshala</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="fun.js"></script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<header class="top">
+			<nav>
+				<div class="logo"><a href="index.php"><img src="images/logo1.png" alt="logo"></a></div>
+				<ul>
+					<li><a class="active" href="">Home</a></li>
+					<li><a href="#courses_section">Courses</a></li>
+					<li><a href="#portfolio_section">Portfolio</a></li>
+					<li><a href="#team_section">Team</a></li>
+					<li><a href="#services_section">Services</a></li>
+					<li><a href="#contactus_section">Contact</a></li>
+				</ul>
+
+				<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+						src="images/icons/search.png" alt="search" onclick=slide()></div>
+				<a class="get-started" href="login.php">
+					<?php
+					if($new){echo"Sign In";}
+					else
+					{echo $_SESSION['username'];}
+					?>
+					</a>
+				<img src="images/icons/moon.png" alt="moon" id="theme">
+				<img src="images/icons/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+			</nav>
+
+			<div class="side-menu" id="side-menu">
+				<div class="close" onclick="sideMenu(1)"><img src="images/icons/close.png" alt=""></div>
+				<div class="user">
+					<img src="images/raja.jpg" alt="Username">
+					<p>imrajastark</p>
+				</div>
+				<ul>
+					<li><a class="active" href="">Home</a></li>
+					<li><a href="#courses_section">Courses</a></li>
+					<li><a href="#portfolio_section">Portfolio</a></li>
+					<li><a href="#team_section">Team</a></li>
+					<li><a href="#services_section">Services</a></li>
+				</ul>
+				<a class="get-started" href="login.php">Sign In</a>
+			</div>
+		</header>
+		<div class="head-container">
+			<div class="quote">
+				<p>Coding is a gift given to humans that can even change humanity.</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quae nobis.
+					Nesciunt dolorum consectetur laboriosam aut aliquid quisquam id, accusamus molestias culpa excepturi
+					eveniet, sint voluptatum rem? Nobis, aliquid provident.
+					Fuga at quidem iste quaerat? Tempore est ipsum architecto dolor, dignissimos distinctio commodi
+					ducimus officia quis reprehenderit cupiditate vero dolore error, corrupti nihil. Dolores earum
+					excepturi ducimus. Accusantium, dolores officiis.</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/third.jpg" alt="svg">
+			</div>
+		</div>
+
+
+	</header>
+
+	<!-- Some Popular Subjects -->
+	<div class="title" id="courses_section">
+		<span>Popular Subjects on Coding Pathshala</span>
+	</div>
+	<br><br>
+	<div class="ccard">
+		<center>
+			<div class="ccardbox">
+				<div class="dcard">
+					<a href="python.html" target="_blank">
+						<div class="fpart"><img src="images/subjects/python.png"></div>
+
+						<center>
+							<div class="spart">Python Tutorials</div>
+						</center>
+					</a>
+				</div>
+				<div class="dcard">
+					<a href="java.html" target="_blank">
+						<div class="fpart"><img src="images/subjects/java.png"></div>
+						<center>
+							<div class="spart">Java Tutorials</div>
+						</center>
+					</a>
+				</div>
+				<div class="dcard">
+					<a href="c++.html" target="_blank">
+						<div class="fpart"><img src="images/subjects/c++.png"></div>
+						<center>
+							<div class="spart">C++ Tutorials </div>
+						</center>
+					</a>
+				</div>
+				<div class="dcard">
+					<a href="c.html" target="_blank"></a>
+					<div class="fpart"><img src="images/subjects/c.png"></div>
+					<center>
+						<div class="spart">C Tutorials</div>
+					</center>
+					</a>
+				</div>
+			</div>
+
+	</div>
+
+	<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center>
+			<p style="font-size: 50px; padding-top: 150px;">About</p>
+		</center>
+		<div class="about-content">
+			<div class="side-image">
+				<img class="sideImage" src="images/front.jpg">
+			</div>
+			<div class="side-text">
+				<h2>What you think about us ?</h2>
+				<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research.<br> Educational website can include websites that have games, videos or topic
+					related resources that act as tools to enhance learning and supplement classroom teaching. These
+					websites help make the process of learning entertaining and attractive to the student, especially in
+					today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we
+					can make learning more easier and in a interesting way.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p>
+		</center>
+		<div class="content">
+			<p>
+				“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your
+				attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try
+				ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>We're increasing this data every year</p>
+		<div class="smbox">
+			<span>
+				<center>
+					<div class="data">4</div>
+					<div class="det">Total Courses</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">100+</div>
+					<div class="det">Total Tutorials</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">500+</div>
+					<div class="det">Placement Questions</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">40</div>
+					<div class="det">Total Quizess</div>
+				</center>
+			</span>
+		</div>
+	</div>
+
+	<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center>
+			<p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Developers</p>
+		</center>
+		<div class="totalcard">
+			<div class="card" id="card1">
+				<center><img src="images/gaurav.jpg"></center>
+				<center>
+					<div class="card-title">Gaurav Kumar</div>
+					<div id="detail">
+						<p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium voluptates ipsum eos
+							aspernatur eius praesentium? Sequi accusamus iusto sed distinctio facere. Veniam voluptate
+							molestiae, aspernatur impedit optio harum excepturi aliquid! “</p>
+						<div class="duty"></div>
+						<a href="#" target="_blank"><button style="color: black;" class="btn-gaurav">Follow +</button></a>
+					</div>
+				</center>
+			</div>
+			<div class="card" id="card2">
+				<center><img src="images/raja.jpg"></center>
+				<center>
+					<div class="card-title">Raja Babu</div>
+					<div id="detail">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia aut odio provident hic
+							deserunt iure at in vjhvliugo vyugfiuhoi ghgcvyfuihoi chycvyukgiu tyfukgihojl xtdfuigo
+							xhycuigo quas, nesciunt ratione beatae minus quaerat sunt totam earum culpa, nisi
+							delectus!</p>
+						<div class="duty"></div>
+						<a href="https://www.linkedin.com/in/raja-babu-5819911a7/" target="_blank"><button style="color: black;"
+								class="btn-raja">Follow +</button></a>
+					</div>
+				</center>
+			</div>
+			<div class="card" id="card3">
+				<center><img src="images/teghla.jpg"></center>
+				<center>
+					<div class="card-title">Banti Kumar</div>
+					<div id="detail">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nostrum reprehenderit totam
+							autem nam nobis debitis, tevkuyvigfy7fguj txtydckuivuilok gzrthsy6dfukgiohop netur in esse
+							eveniet voluptatum cupiditate? Eaque iure quos
+							debitis saepe nobis quae consequuntur.</p>
+						<div class="duty"></div>
+						<a href="https://www.linkedin.com/in/banti-kumar-35289a16a/" target="_blank"><button style="color: black;"
+								class="btn-banti">Follow +</button></a>
+					</div>
+				</center>
+			</div>
+			<div class="card" id="card4">
+				<center><img src="images/aviraj.jpg"></center>
+				<center>
+					<div class="card-title">Aviraj</div>
+					<div id="detail">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti necessitatibus
+							reiciendis distinctio quidem ab corrupti perferendis pariatur nesciunt quasi velit placeat
+							labore quae, excepturi incidunt asperiores natuvuyfgilukcyu8fivf8is maiores in!</p>
+						<div class="duty"></div>
+						<a href="https://www.linkedin.com/in/aviraj-982b0bab/" target="_blank"><button style="color: black;"
+								class="btn-aviraj">Follow +</button></a>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+			<center>
+				<p style="font-size: 50px; padding: 80px; padding-bottom: 40px; color:white;">Services</p>
+			</center>
+		</div>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/onilnecourses.jpg">
+				<p>Free Online Programming Courses</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/concepts.png">
+				<p>Building Concepts for Competitive Exams</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/tut.jpg">
+				<p>Online Tutorials</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/papers.png">
+				<p>Sample Papers of Various Competitive Exams</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/placement.png">
+				<p>Placement Preparation</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="images/icons/discussion.jpg">
+				<p>Discussion with Our Tutors & Mentors</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/quiz.webp">
+				<p>Quiz Questions to Improve IQ</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icons/support.png">
+				<p>24x7 Online Support</p>
+			</div>
+		</a>
+	</div>
+	<!-- CONTACT US -->
+	<div class="title2" id="feedBACK">
+		<center>
+			<p style="font-size: 50px; padding: 100px">Contact Us</p>
+		</center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+				<form action="mailto:imrajastark@gmail.com" method="post" enctype="text/plain">
+					<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name
+						<span class="imp">*</span></label><br>
+					<center>
+						<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input
+							type="text" name="lname" style="width: 175px" required="required"><br>
+					</center>
+					<label>Email <span class="imp">*</span></label><br>
+					<input type="email" name="mail" style="width: 100%" required="required"><br>
+					<label>Message <span class="imp">*</span></label><br>
+					<input type="text" name="message" style="width: 100%" required="required"><br>
+					<label>Additional Details</label><br>
+					<textarea name="addtional"></textarea><br>
+					<button type="submit" id="csubmit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- FEEDBACK --><!--
+	<div class="title2" id="feedBACK">
+		<center><span>Give Feedbacks</span></center>
+		<div class="shortdesc2">
+			<center>
+				<p>Please share your valuable feedback to us</p>
+			</center>
+		</div>
+	</div>
+
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:imrajastark@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+-->
+	<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right,rgb(42, 6, 6), red ); margin-top: 50px;" direction="left"
+		onmouseover="this.stop()" onmouseout="this.start()" scrollamount="18">
+		<div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it
+			today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is
+			expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and
+			change.”</div>
+	</marquee>
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/logo1.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icons/fb.webp"></a>
+					<a href="#"><img src="images/icons/insta.webp"></a>
+					<a href="#"><img src="images/icons/twitter.png"></a>
+					<a href="#"><img src="images/icons/linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Created By Raja Babu, Banti kumar, Gaurav Kumar and Aviraj All
+					Rights Reserved.</p>
+				<br>
+				<p class="loc"><img src="images/icons/location.png"> Muzaffarpur Institute of Technology<br>Muzaffarpur,
+					<Bihar-842003></Bihar-842003>
+				</p>
+				<br>
+				<p class="phone"><img src="images/icons/phone.svg"> +91-7250319466<br><img
+						src="images/icons/email.svg">&nbsp;
+					imrajastark@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Latest Notifications</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script>
+		var theme = document.getElementById("theme");
+		theme.onclick = function () {
+			document.body.classList.toggle("dark-theme");
+			if(document.body.classList.contains("dark-theme")){
+				theme.src="images/icons/sun.png";
+			}
+			else
+			theme.src="images/icons/moon.png";
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--primary-color: white;
+	--secondary-color: black;
+}
+.dark-theme{
+	--primary-color: black;
+	--secondary-color: white;
+}
+.mod-theme{
+	--primary-color: rgb(4, 55, 80);
+	--secondary-color: rgb(15, 183, 205);
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--primary-color);
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.logo img {
+	width: 200px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+nav {
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: var(--primary-color);
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 800;
+
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 7px 10px;
+}
+
+nav ul li a {
+	padding: 2px 10px;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+nav ul li a:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: #e60808;
+}
+.active {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: #e60808;
+}
+.srch {
+	padding: 2px 7px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: flex-end;
+	/* background: #0066ff; */
+	border: 1px solid;
+	border-radius: 20px;
+}
+
+.srch img {
+	width: 20px;
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.srch .search {
+	/* padding: 2px 10px; */
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 15px;
+	color: var(--primary-color);
+}
+
+.get-started {
+	margin-left: 5px;
+	padding: 5px 10px;
+	border: 2px solid #e60808;
+	border-radius: 20px;
+	text-decoration: none;
+
+	transition: .5s;
+	background-color: #e60808;
+	color: var(--primary-color);
+}
+
+.get-started:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: #e60808;
+}
+
+a,
+button {
+	float: left;
+	font-family: "Montserrat", "Ubuntu";
+	font-weight: 500;
+	font-size: 15px;
+	color: var(--secondary-color);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* SIDE MENU */
+.menu {
+	cursor: pointer;
+	width: 25px;
+	display: none;
+}
+
+.side-menu {
+	width: 100%;
+	height: 100%;
+	background: #e60808;
+	position: absolute;
+	top: 0;
+	transition: .8s;
+	z-index: 2000;
+	transform: translateX(-100%);
+}
+
+.side-menu ul {
+	margin-top: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.side-menu ul li {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.side-menu ul li:hover a {
+	background: var(--primary-color);
+	color: #DF2771;
+}
+
+.side-menu ul li a {
+	color: var(--primary-color);
+	width: 100%;
+	font-size: 1em;
+	/* background: #2E3D49; */
+	text-decoration: none;
+	padding: 15px 0px;
+}
+
+.close img {
+	float: right;
+	width: 35px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.user img {
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
+	filter: drop-shadow(0 10px 20px var(--secondary-color));
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.user p {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.user img,
+.user p {
+	opacity: 1;
+}
+
+/* Container */
+.head-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.quote {
+	margin-top: 250px;
+	width: 600px;
+	transform: translateY(-50px);
+}
+
+.quote h5 {
+	margin-top: 20px;
+	color: var(--secondary-color);
+	line-height: 25px;
+}
+
+.quote p {
+	font-size: 50px;
+	color: var(--secondary-color);
+}
+
+.svg-image img {
+	margin-top: 125px;
+	width: 500px;
+	height: 450px;
+	filter: drop-shadow(0 50px 30px var(--secondary-color));
+}
+
+
+/*Common things in all sections*/
+#about_section,
+#portfolio_section,
+#team_section,
+#services_section,
+#contactus_section {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--secondary-color);
+	position: relative;
+}
+
+.diffSection {
+	width: 100%;
+	/*position: relative;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.diffSection .content {
+	margin: 10px;
+	text-align: center;
+	padding: 10px 100px;
+	font-size: 1.1em;
+}
+
+
+/*Title of Subjects*/
+.title {
+	font-size: 40px;
+	padding: 10px;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	font-weight: 400;
+}
+
+.ccard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.ccardbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.dcard {
+	margin: 30px;
+	width: 270px;
+	height: 300px;
+	/*background: linear-gradient(to right, rgb(196, 103, 103), rgb(211, 65, 65));*/
+	background: var(--primary-color);
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.dcard .fpart {
+	width: 250px;
+	height: 200px;
+	color: var(--secondary-color);
+	text-align: center;
+	overflow: hidden;
+}
+
+.dcard .fpart img {
+	width: 90%;
+	height: 100%;
+}
+
+.dcard .spart {
+	margin: 50px;
+	text-align: center;
+	color: var(--secondary-color);
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.dcard:hover {
+	transition: .8s ease;
+	transform: scale(1.2);
+}
+
+.dcard .spart:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: #e60808;
+	transition: .3s;
+}
+
+/*ABOUT*/
+
+.about-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-content .side-text {
+	margin-top: 200px;
+	margin-left: 100px;
+	width: 600px;
+	transform: translateY(-50px);
+}
+
+.about-content .side-text h2 {
+	padding: 10px;
+}
+
+.about-content .side-text p {
+	padding: 10px;
+}
+
+.about-content .side-image img {
+	margin-top: 110px;
+	border-radius: 10px;
+	width: 450px;
+	height: 450px;
+	filter: drop-shadow(0 30px 30px var(--secondary-color));
+}
+
+
+/*PORTFOLIO*/
+.diffSection .content p {
+	padding-bottom: 25px;
+}
+
+.extra {
+	width: 100%;
+}
+
+.extra p {
+	padding: 30px;
+	padding-bottom: 150px;
+	font-size: 50px;
+	text-align: center;
+	color: var(--primary-color);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/second.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: cursive;
+	z-index: -9;
+}
+
+.smbox {
+	display: flex;
+	flex-wrap: wrap;
+	transform: translateY(-100px);
+	justify-content: center;
+}
+
+.smbox span {
+	margin: 1%;
+	background: var(--primary-color);
+	box-shadow: inset 0px 0px 25px var(--secondary-color),
+		0 0 40px var(--secondary-color);
+	border-radius: 10px;
+	padding: 30px 50px;
+	cursor: pointer;
+}
+
+.smbox span:hover {
+	transform: scale(1.3);
+	transition: .5s ease;
+}
+
+.smbox .data {
+	font-size: 80px;
+	color: red;
+}
+
+.smbox .det {
+	font-size: 20px;
+	color: var(--secondary-color);
+	font-family: cursive;
+}
+
+/* Team Section */
+.totalcard {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.totalcard .card {
+	margin: 30px;
+	width: 300px;
+	border-radius: 15px;
+	background: var(--primary-color);
+}
+
+.totalcard .card {
+	box-shadow: inset 0 0 10px var(--secondary-color),
+		0 0 10px var(--secondary-color);
+}
+
+#card1 {
+	border-top: 5px solid red;
+}
+
+#card2 {
+	border-top: 5px solid blue;
+}
+
+#card3 {
+	border-top: 5px solid yellow;
+}
+
+#card4 {
+	border-top: 5px solid green;
+}
+
+#card1:hover {
+	box-shadow: inset 0px 0px 10px red,
+		1px 1px 30px red;
+}
+
+#card2:hover {
+	box-shadow: inset 0px 0px 10px blue,
+		1px 1px 30px blue;
+}
+
+#card3:hover {
+	box-shadow: inset 0px 0px 10px yellow,
+		1px 1px 30px yellow;
+}
+
+#card4:hover {
+	box-shadow: inset 0px 0px 10px green,
+		1px 1px 30px green;
+}
+
+.totalcard .card img {
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
+	cursor: pointer;
+	border-radius: 50px;
+	transition-duration: .8s;
+}
+
+.totalcard .card img:hover {
+	transform: scale(3.5);
+	border-radius: 0;
+	box-shadow: 0 0 20px var(--secondary-color);
+}
+
+#detail p {
+	font-size: 15px;
+	line-height: 25px;
+	font-variant: small-caps;
+	text-align: justify;
+	margin: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#detail button {
+	outline: none;
+	border-radius: 10px;
+	border-style: none;
+	border: 1px solid var(--secondary-color);
+	padding: 9px 25px;
+	cursor: pointer;
+	transition-duration: .4s;
+}
+
+#detail a {
+	bottom: 80px;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-left: 90px;
+	align-self: center;
+}
+
+.btn-gaurav:hover {
+	background: red;
+	color: var(--primary-color);
+}
+
+.btn-raja:hover {
+	background: blue;
+	color:var(--primary-color);
+}
+
+.btn-banti:hover {
+	background: yellow;
+	color: var(--primary-color);
+}
+
+.btn-aviraj:hover {
+	background: green;
+	color: var(--primary-color);
+}
+
+.card-title {
+	font-size: 17px;
+	color: var(--secondary-color);
+	padding: 20px;
+	font-weight: 700;
+}
+
+/*Service Section*/
+.service-swipe {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/third.jpg");
+	opacity: .95;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.service-swipe .s-card img {
+	width: 100px;
+}
+
+.service-swipe a {
+	padding: 0;
+	margin: 40px 10px;
+}
+
+.service-swipe .s-card {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	height: 200px;
+	box-shadow: inset 0 0 20px var(--secondary-color),
+		0 0 50px var(--secondary-color);
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.service-swipe .s-card p {
+	color: var(--primary-color);
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.service-swipe .s-card:hover {
+	box-shadow: 0 0 50px var(--primary-color);
+	transform: translateY(-10px);
+}
+
+/*Contact Section*/
+.csec {
+	background: linear-gradient(to right, red, var(--secondary-color));
+	background-image: linear-gradient(var(--secondary-color), var(--secondary-color)), url("images/forth.jpg");
+	background-attachment: fixed;
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	top: 200px;
+	content: '';
+	transform-origin: top right;
+	transform: skewX(-10deg);
+	z-index: -1;
+}
+
+.back-contact {
+	margin-top: 0px;
+	transform: translateY(-50px);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.cc {
+	height: 400px;
+	width: 400px;
+	height: 500px;
+	border-radius: 10px;
+	justify-content: center;
+	box-shadow: 1px 1px 20px var(--secondary-color);
+	background: var(--primary-color);
+	box-shadow: 0 0 20px red;
+}
+
+.cc form {
+	margin: 5%;
+	margin-top: 40px;
+	width: 90%;
+	height: 90%;
+}
+
+.cc form label {
+	position: absolute;
+	color: var(--secondary-color);
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.cc form input {
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px var(--primary-color);
+	border: 1px solid var(--secondary-color);
+	outline: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+}
+
+.imp {
+	color: red;
+}
+
+form textarea {
+	width: 100%;
+	height: 100px;
+	box-shadow: inset 0 0 5px var(--primary-color);
+	border: 1px solid var(--secondary-color);
+	border-radius: 5px;
+	outline: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+	padding: 15px;
+}
+
+#csubmit {
+	margin-top: 20px;
+	background: linear-gradient(to right, var(--secondary-color), red);
+	border-radius: 5px;
+	border-style: none;
+	outline: none;
+	width: 100%;
+	padding: 15px 25px;
+	color: var(--primary-color);
+	font-size: 12px;
+	cursor: pointer;
+}
+
+#csubmit:hover {
+	box-shadow: 0 0 50px var(--primary-color);
+	background: var(--secondary-color);
+}
+
+/*FEEDBACK*/
+.title2 {
+	position: relative;
+	margin-top: 100px;
+	margin-left: 0px;
+}
+
+.title2 span {
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400px;
+	color: var(--secondary-color);
+}
+
+.title2 .shortdesc2 {
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+}
+
+.feedbox {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 20), rgba(0, 0, 0, 0.200)), url("images/fifth.png");
+	background-size: cover;
+	padding: 50px 80px;
+	background-attachment: fixed;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.feed {
+	width: 800px;
+	height: 400px;
+	position: relative;
+	border-radius: 10px;
+	justify-content: center;
+	box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6),
+		0 0 80px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.feed form {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.feed form label {
+	position: absolute;
+	color: var(--primary-color);
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.feed form input,
+.feed textarea {
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px red;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	outline: none;
+	color: var(--secondary-color);
+	background: var(--primary-color);
+	font-weight: 600;
+}
+
+.feed form input {
+	margin-bottom: 15px;
+	width: 50%;
+}
+
+.feed form .fname {
+	width: 25%;
+}
+
+.feed form textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.feed #csubmit {
+	margin-top: 25px;
+	background: linear-gradient(to right, var(--secondary-color), red);
+	border-radius: 5px;
+	border-style: none;
+	outline: none;
+	width: 100%;
+	padding: 15px 25px;
+	color: var(--primary-color);
+	font-size: 14px;
+	cursor: pointer;
+}
+
+/*SCROLLING TEXT*/
+.marqu {
+	text-align: center;
+	justify-content: center;
+	color: var(--primary-color);
+	font-size: 20px;
+	padding: 10px;
+}
+
+/*FOOTER*/
+footer {
+	color: white;
+	background: black;
+	padding: 50px 0;
+}
+
+footer .footer-container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+
+footer .social-media img {
+	width: 22px;
+}
+
+footer .logo img {
+	width: 180px;
+	color: var(--primary-color);
+}
+
+footer .loc img {
+	width: 20px;
+	color: var(--primary-color);
+}
+
+footer .phone img {
+	width: 20px;
+	color: var(--primary-color);
+}
+
+footer .social-media a {
+	margin-right: 10px;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+footer .right-col h1 {
+	font-size: 26px;
+}
+
+footer .border {
+	width: 200px;
+	height: 6px;
+	background: linear-gradient(to right, rgb(167, 111, 111), red);
+	margin: 4px;
+}
+
+footer .newsletter-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer input::placeholder {
+	color: var(--primary-color) !important;
+}
+
+footer .txtb {
+	flex: 1;
+	padding: 18px 40px;
+	font-size: 16px;
+	background: var(--secondary-color);
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	min-width: 260px;
+	margin-top: 20px;
+	color: var(--primary-color);
+}
+
+footer .btn {
+	margin-top: 20px;
+	padding: 18px 40px;
+	font-size: 16px;
+	color: var(--primary-color);
+	background: linear-gradient(to right, var(--secondary-color), red);
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;
+}
+
+footer .btn:hover {
+	opacity: .7;
+}
+
+/*PROPERTIES FOR MAKING WEBSITE RESPONSIVE*/
+@media screen and (max-width: 960px) {
+	.footer-container {
+		max-width: 600px;
+	}
+
+	.right-col {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.left-col {
+		width: 100%;
+		text-align: center;
+	}
+
+	.social-media {
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo {
+		transition: 1s;
+		margin-left: 30%;
+	}
+
+	nav ul,
+	.srch,
+	.get-started {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	nav {
+		padding-bottom: 20px;
+		border-bottom: 1px solid var(--secondary-color);
+		/* position: fixed; */
+		/* top: 0; */
+	}
+
+	.quote p,
+	.quote h5,
+	.play {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.quote p {
+		font-size: 30px;
+	}
+
+	.service-container .right-side img {
+		width: 90%;
+	}
+
+	.title {
+		margin-top: 0px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	footer .btn {
+		margin: 0;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.svg-image img {
+		width: 90%;
+		margin: 20px;
+		/* align-self: center; */
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.feedbox form input,
+	.feedbox form .fname {
+		width: 100%;
+	}
+}
+
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb{
+	background: rgb(238, 25, 25);
+	border-radius: 205px;
+}
+
+
+
+
+
+text-decoration: none;
+	margin-right: 25px;
+	text-decoration: none;
+	transition: .5s;
+	color: var(--secondary-color);
+	background: var(--tertiary-color);
+	margin-left: 20%;
+	padding: 2px 10px;
+	font-size: 18px;
+	font-weight: 500;
+    white-space: nowrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav>
+	<div class="logo"><a href="index.html"><img src="images/logo1.png" alt="logo"></a></div>
+	<ul>
+		<li><a class="active" href="">Home</a></li>
+		<li><a href="#courses_section">Courses</a></li>
+		<li><a href="#portfolio_section">Portfolio</a></li>
+		<li><a href="#services_section">Services</a></li>
+		<li><a href="#contactus_section">Contact</a></li>
+	</ul>
+	<div class="srch"><input type="text" class="search" placeholder="Search"><img
+			src="images/icons/search.png" alt="search" ></div>
+			<a href="<?php echo $buttonHref1; ?>"><button class="get-started"><?php echo $buttonText1; ?></button></a>
+			<a href="<?php echo $buttonHref2; ?>"><button class="get-started"><?php echo $buttonText2; ?></button></a>
+	<img src="images/icons/moon.png" alt="moon" class="moon" id="theme">
+	<img src="images/icons/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+
+</nav>
+
+
+
+
+
+
+.logo img {
+	width: 130px;
+	cursor: pointer;
+	transition: all 1s;
+}
+nav {
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: var(--primary-color);
+	justify-content: left;
+	transition: 1.5s;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 800;
+
+}
+
+nav ul {
+	display: flex;
+	margin-left: 5%;
+	align-items: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 7px 5px;
+}
+
+nav ul li a {
+	padding: 2px 10px;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 400;
+
+}
+
+nav ul li a:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+
+.active {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+
+.srch {
+	padding: 2px 7px;
+	margin-left: 4%;
+	display: flex;
+	float: right;
+	border: 1px solid;
+	border-radius: 10px;
+}
+.srch input{
+	width: 70px;
+	height: 25px;
+}
+.srch img {
+	width: 15px;
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.srch .search {
+	outline: none;
+	border: none;
+	background: transparent;
+	justify-content: center;
+	font-size: 16px;
+	color: var(--primary-color);
+}
+
+.get-started:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+
+.get-started {
+	max-width: 5em;
+	margin-left:50%;
+	padding: 5px 8px;
+	border: 2px solid var(--tertiary-color);
+	border-radius: 20px;
+	text-decoration: none;
+	transition: .5s;
+	background-color: var(--tertiary-color);
+	color: var(--secondary-color);
+}
+a, button {
+	float: left;
+	font-family: "Montserrat", "Ubuntu";
+	font-weight: 500;
+	font-size: 15px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+.moon{
+	float: right;
+	margin-left: auto;
+	margin-right: 0%;
+}
+
+
+
+
+
+
+
+
+
+<nav class="navbar">
+	<a class="logo" href="index.php"><img class="logo_img" src="images/logo.png" alt="Logo"></a>
+	<ul class="navbar-menu">
+		<li><a class="active" href="">Home</a></li>
+		<li><a href="#courses_section">Courses</a></li>
+		<li><a href="#portfolio_section">Portfolio</a></li>
+		<li><a href="#services_section">Services</a></li>
+		<li><a href="#contactus_section">Contact</a></li>
+	</ul>
+	<div class="navbar-right">
+		<form class="search-form">
+			<input type="text" placeholder="Search">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+		<a class="login-button" href="#">Login</a>
+		<a class="logout-button" href="#">Logout</a>
+		<img src="images/icons/moon.png" alt="moon" class="moon" id="theme">
+		<img src="images/icons/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+	</div>
+</nav>
+
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primary-color);
+	padding: 0px;
+	transition: 1.5s;
+	font-weight: 500;
+	border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  .logo {
+	text-decoration: none;
+	color: #333;
+  }
+  .logo_img{
+	width: 120px;
+	cursor: pointer;
+	transition: all 1s;
+  }
+  
+  .navbar-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  
+  .navbar-menu li {
+	margin-right: 4%;
+  }
+  
+  .navbar-menu li:last-child {
+	margin-right: 0;
+  }
+  
+  .navbar-menu li a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: .5s;
+	padding: 2px 10px;
+	font-size: 18px;
+	font-weight: 500;
+  }
+
+  .navbar-menu li a:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+
+.active {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+
+  
+  .navbar-right {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-form {
+	margin-right: 5%;
+	margin-top: 21px;
+	
+  }
+  
+  .search-form input {
+	padding: 5px;
+	color: var(--primary-color);
+	width: 130px;
+  }
+  
+  .search-form button {
+	padding: 5px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .login-button,
+  .logout-button {
+	text-decoration: none;
+	margin-right: 10px;
+	text-decoration: none;
+	transition: .5s;
+	color: var(--secondary-color);
+  }
+  .login-button:hover,
+  .logout-button:hover{
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+  }
+  
+  .icon {
+	margin-right: 10px;
+  }
+  
+
+  	<!-- Navigation Bar -->
+	<header id="header">
+		<header class="top">
+			
+
+
+			<div class="side-menu" id="side-menu">
+				<div class="close" onclick="sideMenu(1)"><img src="images/icons/close.png" alt=""></div>
+				<div class="user">
+					<img src="images/raja.jpg" alt="Username">
+					<p>imrajastark</p>
+				</div>
+				<ul>
+					<li><a class="active" href="">Home</a></li>
+					<li><a href="#courses_section">Courses</a></li>
+					<li><a href="#portfolio_section">Portfolio</a></li>
+					<li><a href="#services_section">Services</a></li>
+					<li><a href="#contactus_section">Contact</a></li>
+				</ul>
+
+			</div>
+		</header>
+		<div class="head-container">
+			<div class="quote">
+				<p>"Coding is the language of the future, speak it fluently."</p>
+				<h5>"Through coding, you have the power to turn your ideas into reality and shape the world around you."
+
+					<br>Coding can be a challenging and rewarding journey. Embrace the process, stay motivated,
+					and never stop learning. The possibilities are endless!
+				</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/third.jpg" alt="svg">
+			</div>
+		</div>
+
+
+	</header>
+
+
+
+
+
+
+
+
+
+
+	:root{
+		--primary-color: white;
+		--secondary-color: black;
+		--tertiary-color: rgb(25, 112, 115);
+		/* #e60808*/
+	}
+	.dark-theme{
+		--primary-color: black;
+		--secondary-color: white;
+	}
+	.mod-theme{
+		--primary-color: rgb(4, 55, 80);
+		--secondary-color: rgb(15, 183, 205);
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		background: var(--primary-color);
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.logo img {
+		width: 130px;
+		cursor: pointer;
+		transition: all 1s;
+	}
+	.nav {
+		top: 0;
+		position: fixed;
+		display: flex;
+		width: 100%;
+		z-index: 1000;
+		background: var(--primary-color);
+		justify-content: left;
+		transition: 1.5s;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 800;
+	
+	}
+	
+	.nav ul {
+		display: flex;
+		margin-left: 5%;
+		align-items: left;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.nav ul li {
+		list-style: none;
+		margin: 7px 5px;
+	}
+	
+	.nav ul li a {
+		padding: 2px 10px;
+		color: var(--secondary-color);
+		cursor: pointer;
+		transition: .5s;
+		text-decoration: none;
+		font-size: 17px;
+		font-weight: 400;
+	
+	}
+	
+	.nav ul li a:hover {
+		color: var(--primary-color);
+		border-radius: 5px;
+		background: var(--tertiary-color);
+	}
+	
+	.active {
+		color: var(--primary-color);
+		border-radius: 5px;
+		background: var(--tertiary-color);
+	}
+	
+	.srch {
+		padding: 2px 7px;
+		margin-left: 4%;
+		display: flex;
+		float: right;
+		border: 1px solid;
+		border-radius: 10px;
+	}
+	.srch input{
+		width: 70px;
+		height: 25px;
+	}
+	.srch img {
+		width: 15px;
+		cursor: pointer;
+		color: var(--primary-color);
+	}
+	
+	.srch .search {
+		outline: none;
+		border: none;
+		background: transparent;
+		justify-content: center;
+		font-size: 16px;
+		color: var(--primary-color);
+	}
+	
+	.get-started:hover {
+		color: var(--primary-color);
+		border-radius: 5px;
+		background: var(--tertiary-color);
+	}
+	
+	.get-started {
+		max-width: 5em;
+		margin-left:50%;
+		padding: 5px 8px;
+		border: 2px solid var(--tertiary-color);
+		border-radius: 20px;
+		text-decoration: none;
+		transition: .5s;
+		background-color: var(--tertiary-color);
+		color: var(--secondary-color);
+	}
+	a, button {
+		float: left;
+		font-family: "Montserrat", "Ubuntu";
+		font-weight: 500;
+		font-size: 15px;
+		color: #2E3D49;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+	}
+	.moon{
+		float: right;
+		margin-left: auto;
+		margin-right: 0%;
+	}
+	
+	/* SIDE MENU */
+	.menu {
+		cursor: pointer;
+		width: 25px;
+		display: none;
+	}
+	
+	.side-menu {
+		width: 100%;
+		height: 100%;
+		background: var(--tertiary-color);
+		position: absolute;
+		top: 0;
+		transition: .8s;
+		z-index: 2000;
+		transform: translateX(-100%);
+	}
+	
+	.side-menu ul {
+		margin-top: 35%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.side-menu ul li {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.side-menu ul li:hover a {
+		background: var(--primary-color);
+		color: var(--tertiary-color);
+	}
+	
+	.side-menu ul li a {
+		color: var(--primary-color);
+		width: 100%;
+		font-size: 1em;
+		/* background: #2E3D49; */
+		text-decoration: none;
+		padding: 15px 0px;
+	}
+	
+	.close img {
+		float: right;
+		width: 35px;
+		cursor: pointer;
+		margin: 10px;
+	}
+	
+	.user {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10%;
+	}
+	
+	.user img {
+		width: 60px;
+		border-radius: 50%;
+		border: 2px solid var(--primary-color);
+		filter: drop-shadow(0 10px 20px #0004);
+		margin-right: 30px;
+		cursor: pointer;
+	}
+	
+	.user p {
+		color: var(--primary-color);
+		cursor: pointer;
+	}
+	
+	.user img,
+	.user p {
+		opacity: 1;
+	}
+	
+	/* Container */
+	.head-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	.quote {
+		margin-top: 150px;
+		width: 600px;
+		transform: translateY(-50px);
+	}
+	
+	.quote h5 {
+		margin-top: 20px;
+		color: var(--secondary-color);
+		line-height: 25px;
+	}
+	
+	.quote p {
+		font-size: 50px;
+		color: var(--secondary-color);
+	}
+	
+	.svg-image img {
+		margin-top: 100px;
+		width: 500px;
+		height: 450px;
+		filter: drop-shadow(0 50px 30px rgba(0, 0, 0, 0.2));
+	}
+
+
+
+
+
+
+
+	<nav>
+		<div class="logo"><img src="images/logo.png" alt="logo"></div>
+		<ul>
+			<li><a class="active" href="">Home</a></li>
+			<li><a href="#courses_section">Courses</a></li>
+			<li><a href="#team_section">Team</a></li>
+			<li><a href="#services_section">Services</a></li>
+			<li><a href="#contactus_section">Contact</a></li>
+		</ul>
+		<form class="search">
+			<input type="text" placeholder="Search.." >
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+		<div class="nav-right">
+		<a class="get-started" href="#">Login</a>
+		<a class="get-started" href="#">Logout</a>
+		<img src="images/icons/moon.png" alt="moon" class="moon" id="theme">
+		<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+	</div>
+	</nav>
+
+
+
+	
+nav {
+	padding-top: 5px;
+	padding-bottom: 20px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: var(--primary-color);
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+.nav-right{
+	float: right;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+	margin: 5px 10px;
+}
+nav ul li a {
+	padding: 2px 8px;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+.active {
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: var(--tertiary-color);
+}
+.search-form {
+	padding: 2px 10px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 20px;
+  }
+  
+  .search-form input {
+	padding: 15px;
+	color: var(--primary-color);
+	width: 70px;
+	outline: none;
+	border: none;
+	background: transparent;
+  }
+  
+  .search-form button {
+	padding: 5px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+  }
+.get-started {
+	margin-left: 0px;
+	padding: 5px 0px;
+	border: 2px solid var(--tertiary-color);
+	border-radius: 20px;
+	text-decoration: none;
+	
+	transition: .5s;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+}
+.get-started:hover {
+	color: var(--secondary-color);
+	background: var(--primary-color);
+}
+.logo img{
+	width: 120px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+a, button {
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: var(--secondary-color);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
